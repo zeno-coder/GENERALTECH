@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../gallery.css">
+</head>
+<body>
+<header class="work-header">
+  <a href="../home.html" class="work-logo">General<span>Tech</span></a>
+</header>
+
+<h1>Rails Works</h1>
+<div class="work-page">
+  <h1 class="work-title">Our Other Works</h1>
+  <p class="work-subtitle">Our other works,such home services</p>
+<div class="gallery">
+  <img src="../assets/rails/rl1.png" data-desc="Godwin black nigger">
+  <img src="../assets/rails/rl2.png" data-desc="V Board Partition">
+  <img src="../assets/rails/rl3.png" data-desc="ACP Handrail"> 
+  <img src="../assets/rails/rl4.png" data-desc="HPL Sheet Ceiling">
+  <img src="../assets/rails/rl5.png" data-desc="Car shed made with ACP Roof">
+  <img src="../assets/rails/rl6.png" data-desc="Ceiling Fan wall mount made with gp tubes">
+  <img src="../assets/rails/rl7.png" data-desc="Steel handrail with cnc design">
+  <img src="../assets/rails/rl8.png" data-desc="Roofing tile Variations">
+  <img src="../assets/rails/rl9.png" data-desc="Roofing tile Variations">
+  <img src="../assets/rails/rl10.png" data-desc="Roofing tile Variations">
+  <img src="../assets/rails/rl11.png" data-desc="Roofing tile Variations">
+  <img src="../assets/rails/rl12.png" data-desc="Roofing tile Variations">
+  <img src="../assets/rails/rl13.png" data-desc="Roofing tile Variations">
+  <img src="../assets/rails/rl14.png" data-desc="Exterior cladding sheet">
+  <img src="../assets/rails/rl15.png" data-desc="MS Handrail with CNC Design">
+  
+
+</div>
+</div>
+
+<button class="book-btn" onclick="openForm('Roofing')">Enquire About</button>
+
+<div class="form-overlay" id="formOverlay">
+  <div class="form-popup">
+    <span class="form-close" onclick="closeForm()">×</span>
+
+    <h2>Enquire More About</h2>
+    <p class="form-subtitle">Our team will contact you shortly</p>
+
+    <form onsubmit="sendToWhatsApp(event)">
+      <input id="name" placeholder="Full Name" required>
+      <input id="phone" placeholder="Phone Number" required>
+      <textarea id="address" placeholder="Service Address" required></textarea>
+      <textarea id="details" placeholder="Describe Your Requirement"></textarea>
+      <input id="category" readonly>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+<script src="../gallery.js"></script>
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <span class="nav prev">&#10094;</span>
+
+  <img id="lightbox-img">
+
+  <span class="nav next">&#10095;</span>
+
+  <div class="desc" id="lightbox-desc"></div>
+</div></body>
+</html>

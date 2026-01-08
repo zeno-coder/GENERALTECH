@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../gallery.css">
+</head>
+<body>
+    <header class="work-header">
+  <a href="../home.html" class="work-logo">General<span>Tech</span></a>
+</header>
+
+<div class="work-page">
+  <h1 class="work-title">Gates Works</h1>
+  <p class="work-subtitle">Our completed gates works, built with precision and durability.</p>
+<div class="gallery">
+  <img src="../assets/gates/g1.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g2.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g3.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g4.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g5.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g6.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g7.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g8.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g9.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g10.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g11.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  <img src="../assets/gates/g12.png" data-desc="HARI IS HERE BUT YOU CAN'T SEE BZ HE'S EVEN MORE DARKER THAN YOUR MIND">
+  
+</div>
+</div>
+
+<button class="book-btn" onclick="openForm('Gates')">Enquire About</button>
+
+<div class="form-overlay" id="formOverlay">
+  <div class="form-popup">
+    <span class="form-close" onclick="closeForm()">×</span>
+
+    <h2>Enquire More Detailed</h2>
+    <p class="form-subtitle">Our team will contact you shortly</p>
+
+    <form onsubmit="sendToWhatsApp(event)">
+      <input id="name" placeholder="Full Name" required>
+      <input id="phone" placeholder="Phone Number" required>
+      <textarea id="address" placeholder="Service Address" required></textarea>
+      <textarea id="details" placeholder="Describe Your Requirement"></textarea>
+      <input id="category" readonly>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+<script src="../gallery.js"></script>
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <span class="nav prev">&#10094;</span>
+
+  <img id="lightbox-img">
+
+  <span class="nav next">&#10095;</span>
+
+  <div class="desc" id="lightbox-desc"></div>
+</div>
+</body>
+</html>

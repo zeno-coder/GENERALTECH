@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../gallery.css">
+</head>
+<body>
+    <header class="work-header">
+  <a href="../index.html" class="work-logo">General<span>Tech</span></a>
+</header>
+<div class="work-page">
+  <h1 class="work-title">Sunshade Works</h1>
+  <p class="work-subtitle">Our completed sunshade projects, built with precision and durability.</p>
+<div class="gallery">
+  <img src="../assets/sunshade/s1.png" data-desc="HPL Ceiling">
+  <img src="../assets/sunshade/s2.png" data-desc="HPL Ceiling">
+  <img src="../assets/sunshade/s3.png" data-desc="Sunshade Made With ACP Roof">
+  <img src="../assets/sunshade/s4.png" data-desc="ACP ROOF">
+  <img src="../assets/sunshade/s5.png" data-desc="ACP ROOF">
+  <img src="../assets/sunshade/s6.png" data-desc="ACP ROOF">
+  <img src="../assets/sunshade/s7.png" data-desc="Sunshade Glasswork">
+  <img src="../assets/sunshade/s8.png" data-desc="Sunshade Glasswork">
+  <img src="../assets/sunshade/s9.png" data-desc="Sunshade Made With ACP Roof">
+
+
+
+</div>
+</div>
+
+<button class="book-btn" onclick="openForm('Sunshade')">Enquire About</button>
+
+<div class="form-overlay" id="formOverlay">
+  <div class="form-popup">
+    <span class="form-close" onclick="closeForm()">×</span>
+
+    <h2>Enquire More About</h2>
+    <p class="form-subtitle">Our team will contact you shortly</p>
+
+    <form onsubmit="sendToWhatsApp(event)">
+      <input id="name" placeholder="Full Name" required>
+      <input id="phone" placeholder="Phone Number" required>
+      <textarea id="address" placeholder="Service Address" required></textarea>
+      <textarea id="details" placeholder="Describe Your Requirement"></textarea>
+      <input id="category" readonly>
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+<script src="../gallery.js"></script>
+<div class="lightbox" id="lightbox">
+  <span class="close">&times;</span>
+  <span class="nav prev">&#10094;</span>
+
+  <img id="lightbox-img">
+
+  <span class="nav next">&#10095;</span>
+
+  <div class="desc" id="lightbox-desc"></div>
+</div>
+</body>
+</html>
